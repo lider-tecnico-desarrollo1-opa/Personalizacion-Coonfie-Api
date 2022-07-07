@@ -38,14 +38,14 @@ namespace Opa.Dynamics.Coonfie.Host.Extensions
                         "v1", 
                         new OpenApiInfo
                         {
-                            Title = $"Cooptenjo API v1",
+                            Title = $"Coonfie API v1",
                             Version = "v1",
-                            Description = "Cooptenjo API",
+                            Description = "Coonfie API",
                             Contact = new OpenApiContact 
                             {
-                                Name = "Cooptenjo",
+                                Name = "Coonfie",
                                 Email = string.Empty,
-                                Url = new Uri("https://www.cooptenjo.com/"),
+                                Url = new Uri("https://www.Coonfie.com/"),
                             },
                     });
 
@@ -70,7 +70,7 @@ namespace Opa.Dynamics.Coonfie.Host.Extensions
             app.UseSwaggerUI(
                 c =>
                 {
-                    c.SwaggerEndpoint("./swagger/v1/swagger.json", "Cooptenjo API v1");
+                    c.SwaggerEndpoint("./swagger/v1/swagger.json", "Coonfie API v1");
                     c.RoutePrefix = string.Empty;
                 });
 
