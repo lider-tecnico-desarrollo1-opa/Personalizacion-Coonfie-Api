@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Opa.Dynamics.Coonfie.Host</name>
+    </assembly>
+    <members>
+        <member name="T:Opa.Dynamics.Coonfie.Host.Controller.AuthorizationController">
+            <summary>
+            The Authorization Controller
+            </summary>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Controller.AuthorizationController.GetAuthorizationContext(Opa.Dynamics.Coonfie.Module.Business.Dto.Security.AuthRequest)">
+            <summary>
+            The request token.
+            </summary>
+            <param name="user">
+            The Auth user.
+            </param>
+            <returns>
+            The <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/>.
+            </returns>
+            <response code="200">Token to use other methods</response>
+            <response code="400">User data malformed</response>
+            <response code="401">Invalid user credentials</response>   
+        </member>
+        <member name="T:Opa.Dynamics.Coonfie.Host.Extensions.CorsPolicyExtension">
+            <summary>
+            The cross origin policy extension.
+            </summary>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Extensions.CorsPolicyExtension.RegisterCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            The register cross origin.
+            </summary>
+            <param name="services">
+            The services.
+            </param>
+            <returns>
+            The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.
+            </returns>
+        </member>
+        <member name="T:Opa.Dynamics.Coonfie.Host.Extensions.UiServicesExtension">
+            <summary>
+            The User Interface Services Extension
+            </summary>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Extensions.UiServicesExtension.RegisterSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            The register swagger.
+            </summary>
+            <param name="services">
+            The services.
+            </param>
+            <returns>
+            The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.
+            </returns>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Extensions.UiServicesExtension.ConfigureSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            The configure swagger.
+            </summary>
+            <param name="app">
+            The app.
+            </param>
+            <returns>
+            The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.
+            </returns>
+        </member>
+        <member name="T:Opa.Dynamics.Coonfie.Host.Program">
+            <summary>
+            The program.
+            </summary>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Program.Main(System.String[])">
+            <summary>
+            The Main
+            </summary>
+            <param name="args">The args</param>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            The Create Host Builder
+            </summary>
+            <param name="args">The args</param>
+            <returns>
+            The <see cref="T:Microsoft.Extensions.Hosting.IHostBuilder"/>.
+            </returns>
+        </member>
+        <member name="T:Opa.Dynamics.Coonfie.Host.Startup">
+            <summary>
+            The Startup
+            </summary>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Opa.Dynamics.Coonfie.Host.Startup"/> class.
+            </summary>
+            <param name="configuration">The configuration</param>
+        </member>
+        <member name="P:Opa.Dynamics.Coonfie.Host.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            The Configure Services.
+            </summary>
+            <param name="services">The services collection</param>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            The configure
+            </summary>
+            <param name="app">The application builder</param>
+            <param name="env">The host environment</param>
+        </member>
+    </members>
+</doc>
