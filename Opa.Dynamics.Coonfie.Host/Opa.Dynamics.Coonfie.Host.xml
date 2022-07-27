@@ -23,6 +23,24 @@
             <response code="400">User data malformed</response>
             <response code="401">Invalid user credentials</response>   
         </member>
+        <member name="T:Opa.Dynamics.Coonfie.Host.Controller.ClientsController">
+            <summary>
+            The clients controller.
+            </summary> 
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Controller.ClientsController.#ctor(Opa.Dynamics.Coonfie.Module.Services.Facades.IMembersDCFacade)">
+            <summary>
+             Clients Controller
+            </summary>
+            <param name="membersDCFacade"></param>
+        </member>
+        <member name="M:Opa.Dynamics.Coonfie.Host.Controller.ClientsController.GetClient(Opa.Dynamics.Coonfie.Entities.Business.Dto.MemberFilter)">
+            <summary>
+            Get Client
+            </summary>
+            <param name="client"></param>
+            <returns></returns>
+        </member>
         <member name="T:Opa.Dynamics.Coonfie.Host.Extensions.CorsPolicyExtension">
             <summary>
             The cross origin policy extension.
@@ -114,6 +132,22 @@
             </summary>
             <param name="app">The application builder</param>
             <param name="env">The host environment</param>
+        </member>
+        <member name="T:Opa.Dinamycs.Coonfie.Host.Extensions.CustomizeServicesExtension">
+            <summary>
+            The module facade extension.
+            </summary>
+        </member>
+        <member name="M:Opa.Dinamycs.Coonfie.Host.Extensions.CustomizeServicesExtension.RegisterCustomizeServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            The register services.
+            </summary>
+            <param name="services">
+            The services.
+            </param>
+            <returns>
+            The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.
+            </returns>
         </member>
     </members>
 </doc>

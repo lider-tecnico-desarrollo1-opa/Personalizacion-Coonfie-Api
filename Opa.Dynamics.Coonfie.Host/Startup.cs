@@ -15,6 +15,7 @@ namespace Opa.Dynamics.Coonfie.Host
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using Opa.Dinamycs.Coonfie.Host.Extensions;
     using Opa.Dynamics.Coonfie.Host.Extensions;
 
     /// <summary>
@@ -45,6 +46,7 @@ namespace Opa.Dynamics.Coonfie.Host
             services
                 .RegisterSwagger()
                 .RegisterCors()
+                .RegisterCustomizeServices()
                 .AddMvc(options => options.EnableEndpointRouting = false);
         }
 

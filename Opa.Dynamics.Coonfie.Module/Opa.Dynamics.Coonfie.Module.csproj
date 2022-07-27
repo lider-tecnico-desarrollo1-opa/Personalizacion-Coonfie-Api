@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <PackageReference Include="Opa.Members.Module.App" Version="1.0.44-beta" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Opa.Dynamics.Coonfie.Dal\Opa.Dynamics.Coonfie.Dal.csproj" />
+    <ProjectReference Include="..\Opa.Dynamics.Coonfie.Entities\Opa.Dynamics.Coonfie.Entities.csproj" />
   </ItemGroup>
 
 </Project>
